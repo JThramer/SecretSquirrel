@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+//IMPORTANT: You must run ./generateFatBinary.sh first or the next line will error.
 import SecretSquirrelFramework
 
 struct ContentView: View {
