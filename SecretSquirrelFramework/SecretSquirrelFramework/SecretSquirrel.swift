@@ -16,12 +16,12 @@ public struct SecretSquirrel: Identifiable {
   
   public init() { }
   
-  public func speak() -> String {
-    return """
-Hello from \(type(of: self))!
-Instance ID: \(id.uuidString)
-Alamofire Dependancy: \(String(describing: alamo)) @ \(Unmanaged.passUnretained(alamo).toOpaque())
-"""
+  public var speech: String {
+    return "Hello from \(type(of: self))! Instance ID: \(id.uuidString)"
+  }
+  
+  public var alamoSpeech: String {
+    return "Alamofire Dependancy: \(String(describing: alamo)) @ \(Unmanaged.passUnretained(alamo).toOpaque())"
   }
   
 }
