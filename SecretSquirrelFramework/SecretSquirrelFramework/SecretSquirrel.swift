@@ -12,7 +12,9 @@ public struct SecretSquirrel: Identifiable {
  
   public let id = UUID()
   
-  func speak() -> String {
+  public init() { }
+  
+  public func speak() -> String {
     return "Hello from \(type(of: self))! Instance ID: \(id.uuidString)"
   }
   
