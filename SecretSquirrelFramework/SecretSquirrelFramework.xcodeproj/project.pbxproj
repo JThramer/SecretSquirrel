@@ -217,7 +217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# NOTE: is --copy-contents needed?\nrm -r $PROJECT_DIR/../Products/*.xcframework\nxcodebuild -create-xcframework -framework \"$BUILT_PRODUCTS_DIR/SecretSquirrelFramework.framework\" -output \"$PROJECT_DIR/../Products/SecretSquirrel.xcframework\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\n  exit #Skip on release builds.\nfi\n\n# NOTE: is --copy-contents needed?\nrm -r $PROJECT_DIR/../Products/*.xcframework\nxcodebuild -create-xcframework -framework \"$BUILT_PRODUCTS_DIR/SecretSquirrelFramework.framework\" -output \"$PROJECT_DIR/../Products/SecretSquirrel.xcframework\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
