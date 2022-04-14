@@ -13,6 +13,6 @@ class SecretSquirrelFrameworkTests: XCTestCase {
         let squirrel = SecretSquirrel()
         let spoken = squirrel.speak()
       XCTAssertTrue(spoken.hasPrefix("Hello from SecretSquirrel!"))
-
+      XCTAssertTrue(spoken.contains("Alamofire Dependancy: Alamofire.Session"))
     }
 }

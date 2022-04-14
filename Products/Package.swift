@@ -12,6 +12,7 @@ let package = Package(
             targets: [frameworkName]),
     ],
     dependencies: [
+      //.package(url: "https://github.com/Alamofire/Alamofire.git", .exact("5.2.0")),
     ],
     targets: [
         .binaryTarget(
