@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import SecretSquirrelFramework
 
 struct ContentView: View {
+  
+  let squirrel = SecretSquirrel()
     var body: some View {
-        Text("Hello, world!")
+      Text(squirrel.speak())
             .padding()
     }
 }

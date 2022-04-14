@@ -1,8 +1,7 @@
 // swift-tools-version: 5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
-let frameworkName: StaticString = "SecretSquirrel"
-
+let frameworkName = "SecretSquirrel"
 import PackageDescription
 
 let package = Package(
@@ -17,9 +16,6 @@ let package = Package(
     targets: [
         .binaryTarget(
           name: frameworkName,
-          path: "SecretSquirrel.framework"),
-        .testTarget(
-            name: "SecretSquirrelTests",
-            dependencies: [frameworkName]),
+          path: frameworkName + ".xcframework")
     ]
 )

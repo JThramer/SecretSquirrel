@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		437978932808B55F0085D9AF /* SecretSquirrel in Frameworks */ = {isa = PBXBuildFile; productRef = 437978922808B55F0085D9AF /* SecretSquirrel */; };
 		43DE6F862808A622002A20C4 /* SecretSquirrelAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DE6F852808A622002A20C4 /* SecretSquirrelAppApp.swift */; };
 		43DE6F882808A622002A20C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DE6F872808A622002A20C4 /* ContentView.swift */; };
 		43DE6F8A2808A622002A20C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DE6F892808A622002A20C4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4379788E2808B4130085D9AF /* Products */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Products; path = ../Products; sourceTree = "<group>"; };
 		43DE6F822808A622002A20C4 /* SecretSquirrelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSquirrelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DE6F852808A622002A20C4 /* SecretSquirrelAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSquirrelAppApp.swift; sourceTree = "<group>"; };
 		43DE6F872808A622002A20C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +28,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437978932808B55F0085D9AF /* SecretSquirrel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4379788D2808B4130085D9AF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4379788E2808B4130085D9AF /* Products */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		437978912808B55F0085D9AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43DE6F792808A622002A20C4 = {
 			isa = PBXGroup;
 			children = (
+				4379788D2808B4130085D9AF /* Packages */,
 				43DE6F842808A622002A20C4 /* SecretSquirrelApp */,
 				43DE6F832808A622002A20C4 /* Products */,
+				437978912808B55F0085D9AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,8 +101,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				437978902808B5370085D9AF /* PBXTargetDependency */,
 			);
 			name = SecretSquirrelApp;
+			packageProductDependencies = (
+				437978922808B55F0085D9AF /* SecretSquirrel */,
+			);
 			productName = SecretSquirrelApp;
 			productReference = 43DE6F822808A622002A20C4 /* SecretSquirrelApp.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +167,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		437978902808B5370085D9AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4379788F2808B5370085D9AF /* SecretSquirrel */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		43DE6F8E2808A622002A20C4 /* Debug */ = {
@@ -339,6 +370,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4379788F2808B5370085D9AF /* SecretSquirrel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SecretSquirrel;
+		};
+		437978922808B55F0085D9AF /* SecretSquirrel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SecretSquirrel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43DE6F7A2808A622002A20C4 /* Project object */;
 }
