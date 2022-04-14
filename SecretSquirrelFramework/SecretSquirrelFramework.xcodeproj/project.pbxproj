@@ -209,7 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# NOTE: is --copy-contents needed?\nrm -r $PROJECT_DIR/../Products/*.framework\ncp -R $BUILT_PRODUCTS_DIR/*.framework $PROJECT_DIR/../Products/\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# NOTE: is --copy-contents needed?\nrm -r $PROJECT_DIR/../Products/*.xcframework\nxcodebuild -create-xcframework -framework \"$BUILT_PRODUCTS_DIR/SecretSquirrelFramework.framework\" -output \"$PROJECT_DIR/../Products/SecretSquirrel.xcframework\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -378,7 +378,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,7 +406,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
