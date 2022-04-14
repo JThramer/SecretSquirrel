@@ -12,8 +12,8 @@ struct ContentView: View {
   
   let squirrel = SecretSquirrel()
     var body: some View {
-      Text(squirrel.speak())
-            .padding()
+      Text(squirrel.speech).padding()
+      Text(squirrel.alamoSpeech).padding()
     }
 }
 
