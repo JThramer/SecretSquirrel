@@ -13,7 +13,7 @@ class SecretSquirrelFrameworkTests: XCTestCase {
       XCTAssertTrue(SecretSquirrel().speech.hasPrefix("Hello from SecretSquirrel!"))
     }
   
-  func testAlamo() throws {
-    XCTAssertTrue(SecretSquirrel().alamoSpeech.contains("Alamofire Dependancy: Alamofire.Session"))
+  func testRegula() throws {
+    XCTAssertTrue(SecretSquirrel().regulaSpeech.contains("Regula Dependancy: <RGLCLogger:"))
   }
 }

@@ -6,11 +6,11 @@
 //
 
 import Foundation
-import Alamofire
+import RegulaCommon
 /// The mysterious
 public struct SecretSquirrel: Identifiable {
   
-  let alamo = Alamofire.Session.default
+  let logger = RegulaCommon.RGLCLogger()
  
   public let id = UUID()
   
@@ -20,8 +20,8 @@ public struct SecretSquirrel: Identifiable {
     return "Hello from \(type(of: self))! Instance ID: \(id.uuidString)"
   }
   
-  public var alamoSpeech: String {
-    return "Alamofire Dependancy: \(String(describing: alamo)) @ \(Unmanaged.passUnretained(alamo).toOpaque())"
+  public var regulaSpeech: String {
+    return "Regula Dependancy: \(String(describing: logger))"
   }
   
 }

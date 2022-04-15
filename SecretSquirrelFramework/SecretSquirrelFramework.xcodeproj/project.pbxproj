@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43EF28322808BC6D0048E6B8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 43EF28312808BC6D0048E6B8 /* Alamofire */; };
+		43DD66942809CA3100BF7591 /* RegulaCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DD66932809CA3100BF7591 /* RegulaCommon.xcframework */; };
 		43F4BCC728089A71000CA6FA /* SecretSquirrelFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 43F4BCC628089A71000CA6FA /* SecretSquirrelFramework.docc */; };
 		43F4BCCD28089A71000CA6FA /* SecretSquirrelFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4BCC228089A71000CA6FA /* SecretSquirrelFramework.framework */; };
 		43F4BCD228089A71000CA6FA /* SecretSquirrelFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F4BCD128089A71000CA6FA /* SecretSquirrelFrameworkTests.swift */; };
@@ -26,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43DD66932809CA3100BF7591 /* RegulaCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RegulaCommon.xcframework; sourceTree = "<group>"; };
 		43F4BCC228089A71000CA6FA /* SecretSquirrelFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecretSquirrelFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F4BCC528089A71000CA6FA /* SecretSquirrel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretSquirrel.h; sourceTree = "<group>"; };
 		43F4BCC628089A71000CA6FA /* SecretSquirrelFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SecretSquirrelFramework.docc; sourceTree = "<group>"; };
@@ -39,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43EF28322808BC6D0048E6B8 /* Alamofire in Frameworks */,
+				43DD66942809CA3100BF7591 /* RegulaCommon.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +55,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43DD668A2809C47500BF7591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43DD66932809CA3100BF7591 /* RegulaCommon.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43F4BCB828089A71000CA6FA = {
 			isa = PBXGroup;
 			children = (
 				43F4BCC428089A71000CA6FA /* SecretSquirrelFramework */,
 				43F4BCD028089A71000CA6FA /* SecretSquirrelFrameworkTests */,
 				43F4BCC328089A71000CA6FA /* Products */,
+				43DD668A2809C47500BF7591 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,7 +130,6 @@
 			);
 			name = SecretSquirrelFramework;
 			packageProductDependencies = (
-				43EF28312808BC6D0048E6B8 /* Alamofire */,
 			);
 			productName = SecretSquirrelFramework;
 			productReference = 43F4BCC228089A71000CA6FA /* SecretSquirrelFramework.framework */;
@@ -172,7 +181,6 @@
 			);
 			mainGroup = 43F4BCB828089A71000CA6FA;
 			packageReferences = (
-				43EF28302808BC6D0048E6B8 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 43F4BCC328089A71000CA6FA /* Products */;
 			projectDirPath = "";
@@ -495,25 +503,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		43EF28302808BC6D0048E6B8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = exactVersion;
-				version = 5.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		43EF28312808BC6D0048E6B8 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 43EF28302808BC6D0048E6B8 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43F4BCB928089A71000CA6FA /* Project object */;
 }

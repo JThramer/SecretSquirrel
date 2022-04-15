@@ -14,12 +14,12 @@ let package = Package(
             targets: [frameworkName]),
     ],
     dependencies: [
-      .package(url: "https://github.com/Alamofire/Alamofire.git", .exact("5.2.0")),
+      .package(path: "../LocalSwiftPackages/RegulaCommon")
     ],
     targets: [
       .target(name: frameworkName, dependencies: [
         .target(name: binaryName),
-        .product(name: "Alamofire", package: "Alamofire")
+        .product(name: "RegulaCommon", package: "RegulaCommon")
       ]),
         .binaryTarget(
           name: binaryName,
