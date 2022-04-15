@@ -2,7 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/887225/163475445-364b68a7-5d7e-4cc2-9f36-7dbc984cf09c.jpg" width=300 />
 
-A demo repository that showcases how to properly vend a close-source framework. 
+A demo repository that showcases how to properly vend a closed-source framework. 
 
 * Check out [The Basic Demo](https://github.com/JThramer/SecretSquirrel/tree/basic) to get the basic idea of how this is done
 * Check out [The Dependancy Demo](https://github.com/JThramer/SecretSquirrel/tree/main) to see how you can easily satisfy external dependancies for an opaque binary framework using a wrapper package.
